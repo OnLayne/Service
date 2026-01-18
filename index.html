@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teknik Servis Formu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form" id="form">
+  <div class="logo">
+    <img src="https://i.hizliresim.com/eahhzb5.png" alt="Logo">
+  </div>
+  <h1>GEZİCİ BÖLGE MERKEZ SERVİSİ<br>TEKNİK SERVİS FORMU</h1>
+
+  <div class="row">
+    <div><label>Servis No</label><input id="servisno" disabled></div>
+    <div><label>Tarih / Saat</label><input id="tarih" disabled></div>
+  </div>
+
+  <label>Müşteri Ad Soyad</label><input id="ad">
+  <label>Telefon</label><input id="tel" type="tel" placeholder="05xx xxx xx xx">
+  <label>Adres</label><textarea id="adres"></textarea>
+
+  <label>Cihaz Türü</label>
+  <select id="cihaz">
+    <option>Çamaşır Makinesi</option>
+    <option>Bulaşık Makinesi</option>
+    <option>Buzdolabı</option>
+    <option>Klima</option>
+    <option>Kombi</option>
+  </select>
+
+  <label>Marka / Model</label><input id="model">
+  <label>Müşteri Arıza Beyanı</label><textarea id="ariza"></textarea>
+  <label>Servis Tespiti</label><textarea id="tespit"></textarea>
+  <label>Toplam Ücret (₺)</label><input id="ucret" type="number">
+
+  <label>Yapılacak İşlem Seçiniz</label>
+  <select id="islem">
+    <option>Atölyeye Alindi</option>
+    <option>Yerinde Bakim Yapildi</option>
+    <option>Atölyeye Aldir (Nakliye)</option>
+    <option>Fiyatta Anlaşılmadı</option>
+    <option>Ürün Garantili Çikti</option>
+    <option>Müsteriye Ulasilamadi</option>
+    <option>Müsteri iptal Etti</option>
+    <option>Parçasi Atölyeye Alindi</option>
+    <option>Haber Verecek</option>
+    <option>Farkli Teknisyen Yönlendir</option>
+    <option>Servisi Sonlandir</option>
+  </select>
+
+  <label>Fotoğraf Ekle</label>
+  <input id="fotolar" type="file" accept="image/*" multiple>
+
+  <label>Dijital İmza (Müşteri)</label>
+  <canvas id="imza" width="300" height="150"></canvas>
+  <div class="small">Parmağınızla veya mouse ile imzalayın</div>
+
+  <button class="pdf" id="btnPDF">PDF OLUŞTUR</button>
+  <button class="whatsapp" id="btnWA">WhatsApp’tan Gönder</button>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
