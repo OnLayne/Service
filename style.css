@@ -1,54 +1,13 @@
-body {
-  font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto;
-  background:#f2f4f6;
-  margin:0; padding:12px;
-}
-.form {
-  background:#fff;
-  border-radius:12px;
-  padding:14px;
-}
-h1 {
-  text-align:center;
-  font-size:18px;
-  margin:10px 0;
-}
-.logo { text-align:center; }
-.logo img { max-width:180px; }
-
-label {
-  display:block;
-  margin-top:12px;
-  font-weight:600;
-}
-input, textarea, select {
-  width:100%;
-  padding:10px;
-  margin-top:4px;
-  border-radius:8px;
-  border:1px solid #ccc;
-  font-size:15px;
-}
-textarea { min-height:70px; }
-
-.row { display:flex; gap:10px; }
-.row div { flex:1; }
-
-button {
-  width:100%;
-  padding:14px;
-  margin-top:14px;
-  font-size:16px;
-  border:none;
-  border-radius:10px;
-}
-.pdf { background:#0b5ed7; color:#fff; }
-.whatsapp { background:#25D366; color:#fff; }
-
-canvas {
-  border:1px solid #ccc;
-  border-radius:8px;
-  margin-top:6px;
-}
-.small { font-size:13px; color:#555; }
-img.foto { max-width:100%; margin-top:10px; border-radius:8px; display:block; }
+body{font-family:Segoe UI,Roboto;background:#f2f4f6;padding:12px}
+.form{background:#fff;border-radius:12px;padding:14px}
+.logo{text-align:center}
+.logo img{max-width:200px;margin-bottom:10px}
+h1{text-align:center;font-size:18px}
+label{font-weight:600;margin-top:10px;display:block}
+input,textarea,select{width:100%;padding:8px;margin-top:4px;border-radius:8px;border:1px solid #ccc}
+.row{display:flex;gap:10px}
+.row div{flex:1}
+button{width:100%;padding:14px;margin-top:12px;border:none;border-radius:10px;font-size:16px}
+.pdf{background:#0b5ed7;color:#fff}
+.whatsapp{background:#25D366;color:#fff}
+canvas{border:1px solid #ccc;margin-top:6px}
